@@ -1,0 +1,12 @@
+ #include<stdio.h>
+int main()
+{
+int a,b,c,d,e,tot,percent;
+printf("enter the marks of a student:");
+scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+tot=a+b+c+d+e;
+percent=tot/5;
+printf("total marks of a student=%d\n",tot);
+printf("percentage of a student=%d\n",percent);
+return 0;
+}
