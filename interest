@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+   int p,r,n,si,ci;
+   printf("enter principle amount, rate of interest, no.of years:");
+   scanf("%d%d%d",&p,&r,&n);
+   si=p*r*n/100;
+   ci=(p*(1+(r/100)^n))-p;
+   printf("simple interest=%d\n",si);
+   printf("compound interest=%d\n",ci);
+   return 0;
+}
