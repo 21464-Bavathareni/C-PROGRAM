@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+   float basic_pay, da, hra, gross_salary;
+   const float ALLOWANCE = 2000.0;
+   printf("Enter the Basic Pay: ");
+   scanf("%f", &basic_pay);
+   da = 0.40 * basic_pay;
+   hra = 0.10 * basic_pay;
+   gross_salary = basic_pay + da + hra + ALLOWANCE;
+   printf("\n--- Salary Breakdown ---\n");
+   printf("Basic Pay:      $%.2f\n", basic_pay);
+   printf("DA (40%%):       $%.2f\n", da);
+   printf("HRA (10%%):      $%.2f\n", hra);
+   printf("Allowance:      $%.2f\n", ALLOWANCE);
+   printf("------------------------\n");
+   printf("Gross Salary:   $%.2f\n", gross_salary);
+   return 0;
+}
